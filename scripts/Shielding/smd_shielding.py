@@ -51,7 +51,7 @@ def create_smd_shielding(name, **kwargs):
     x_pad_max_center = x_pad_max - kwargs['pads_width']/2.
     y_pad_min_center = y_pad_min + kwargs['pads_width']/2.
     y_pad_max_center = y_pad_max - kwargs['pads_width']/2.
-    
+
     x_part_min = -kwargs['x_part_size'] / 2.
     x_part_max = kwargs['x_part_size'] / 2.
     y_part_min = -kwargs['y_part_size'] / 2.
@@ -80,7 +80,7 @@ def create_smd_shielding(name, **kwargs):
     general_kwargs = {'number': 1,
                       'type': Pad.TYPE_SMT,
                       'shape': Pad.SHAPE_RECT,
-                      'layers': ['F.Cu', 'F.Mask']}
+                      'layers': ['F.Cu', 'F.Mask', 'F.Paste']}
 
     # create edge pads
     kicad_mod.append(Pad(at=[x_pad_min_center, y_pad_min_center],
