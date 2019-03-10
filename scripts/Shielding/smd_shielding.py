@@ -71,6 +71,16 @@ def create_smd_shielding(name, **kwargs):
                               end=[x_courtjard_max, y_courtjard_max],
                               layer='F.CrtYd'))
 
+    # create inner courtyard
+    pad_width = kwargs['pads_width']
+    x_courtjard_min = round_to(x_pad_min + pad_width + kwargs['courtjard'], 0.05)
+    x_courtjard_max = round_to(x_pad_max - pad_width - kwargs['courtjard'], 0.05)
+    y_courtjard_min = round_to(y_pad_min + pad_width + kwargs['courtjard'], 0.05)
+    y_courtjard_max = round_to(y_pad_max - pad_width - kwargs['courtjard'], 0.05)
+    kicad_mod.append(RectLine(start=[x_courtjard_min, y_courtjard_min],
+                              end=[x_courtjard_max, y_courtjard_max],
+                              layer='F.CrtYd'))
+
     # create Fabriaction Layer
     kicad_mod.append(RectLine(start=[x_part_min, y_part_min],
                               end=[x_part_max, y_part_max],
