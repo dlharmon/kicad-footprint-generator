@@ -1,0 +1,26 @@
+FileHeader:
+  library_Suffix: 'SO'
+  device_type: 'MSOP'
+
+MSOP-8_3x3mm_P0.65mm:
+  size_source: 'https://www.diodes.com/assets/Package-Files/MSOP-8.pdf'
+  body_size_x:
+    nominal: 3.0
+    tolerance: 0.1
+  body_size_y:
+    nominal: 3.0
+    tolerance: 0.1
+  body_height:
+    maximum: 1.1
+  overall_size_x:
+    minimum: 4.7
+    maximum: 5.1
+  lead_width:
+    nominal: 0.3
+    tolerance: 0.08
+  lead_len:
+    nominal: 0.6
+    tolerance: 0.2
+  pitch: 0.65
+  num_pins_x: 0
+  num_pins_y: 4
