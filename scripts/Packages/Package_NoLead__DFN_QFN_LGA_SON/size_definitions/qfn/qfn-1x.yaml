@@ -112,6 +112,41 @@ QFN-16-1EP_3x3mm_P0.5mm_EP1.45x1.45mm:
   #suffix: '_Pad{pad_x:.2f}x{pad_y:.2f}mm_HandSolder'
   #include_suffix_in_3dpath: 'False'
 
+QFN-16-1EP_2.6x2.6mm_P0.4mm_EP1.1x1.0mm:
+  device_type: 'QFN'
+  #manufacturer: 'man'
+  #part_number: 'mpn'
+  size_source: 'NXP PTN5110'
+  ipc_class: 'qfn' # 'qfn_pull_back'
+  ipc_density: 'least' #overwrite global value for this device.
+  # custom_name_format:
+  body_size_x:
+    nominal: 2.6
+    tolerance: 0.1
+  body_size_y:
+    nominal: 2.6
+    tolerance: 0.1
+  overall_height:
+    nominal: 0.35
+    tolerance: 0.05
+
+  lead_width:
+    nominal: 0.2
+    tolerance: 0.05
+  lead_len:
+    nominal: 0.4
+    tolerance: 0.05
+
+  EP_size_x: 1.1
+  EP_size_y: 1.0
+  # EP_paste_coverage: 0.65
+  EP_num_paste_pads: [1, 1]
+  #heel_reduction: 0.05 #for relatively large EP pads (increase clearance)
+
+  pitch: 0.4
+  num_pins_x: 3
+  num_pins_y: 5
+
 QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm:
   device_type: 'QFN'
   ipc_class: 'qfn'
