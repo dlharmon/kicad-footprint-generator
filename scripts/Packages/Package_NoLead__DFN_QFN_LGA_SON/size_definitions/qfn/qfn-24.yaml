@@ -625,13 +625,13 @@ QFN-24-1EP_5x5mm_P0.65mm_EP3.4x3.4mm:
   #suffix: '_Pad{pad_x:.2f}x{pad_y:.2f}mm_HandSolder'
   #include_suffix_in_3dpath: 'False'
 
-QFN-24-1EP_5x5mm_P0.65mm_EP3.6x3.6mm:
+QFN-24-1EP_5x5mm_P0.65mm_EP3.6x3.6mm_EFM32HG:
   device_type: 'QFN'
   #manufacturer: 'man'
   #part_number: 'mpn'
   size_source: 'https://www.nxp.com/docs/en/package-information/98ASA00734D.pdf'
   ipc_class: 'qfn' # 'qfn_pull_back'
-  #ipc_density: 'least' #overwrite global value for this device.
+  ipc_density: 'least' #overwrite global value for this device.
   # custom_name_format:
   body_size_x:
     nominal: 5
@@ -644,33 +644,20 @@ QFN-24-1EP_5x5mm_P0.65mm_EP3.6x3.6mm:
     maximum: 1
 
   lead_width:
-    minimum: 0.18
-    maximum: 0.3
+    minimum: 0.25
+    maximum: 0.35
   lead_len:
-    minimum: 0.3
-    maximum: 0.5
+    minimum: 0.35
+    maximum: 0.45
 
   EP_size_x:
-    minimum: 3.45
-    maximum: 3.75
+    minimum: 3.5
+    maximum: 3.7
   EP_size_y:
-    minimum: 3.45
-    maximum: 3.75
-  # EP_paste_coverage: 0.65
+    minimum: 3.5
+    maximum: 3.7
+  EP_paste_coverage: 0.65
   EP_num_paste_pads: [3, 3]
-
-  thermal_vias:
-    count: [4, 4]
-    drill: 0.2
-    # min_annular_ring: 0.15
-    paste_via_clearance: 0.1
-    # EP_num_paste_pads: [2, 2]
-    paste_between_vias: 1
-    paste_rings_outside: 1
-    #EP_paste_coverage: 0.75
-    grid: [0.85, 0.85]
-    # bottom_pad_size:
-    paste_avoid_via: True
 
   pitch: 0.65
   num_pins_x: 6
