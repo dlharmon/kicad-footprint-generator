@@ -218,7 +218,7 @@ Laird_Technologies_BMI-S-230-F_50.8x38.1mm:
     pads_width: 1
     x_part_size: 50.8
     y_part_size: 38.1
-    x_pad_spacer: [1.9, 4.1, 7.9, 10.1, 13.9, 16.1, 19.9, 22.1, 25.95]
+    x_pad_spacer: [1.9, 4.1, 7.9, 10.1, 13.9, 16.1, 19.9, 22.1, 25.8]
     y_pad_spacer: [1.9, 4.1, 7.9, 10.1, 13.9, 16.1, 19.45]
     x_pad_mirror: True
     y_pad_mirror: True
