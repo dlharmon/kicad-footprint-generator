@@ -54,3 +54,4 @@ docs/_build/
 # kicad specific files
 *.kicad_mod
 *.pretty/
+*~

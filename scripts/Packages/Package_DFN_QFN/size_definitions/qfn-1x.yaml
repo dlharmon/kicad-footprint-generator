@@ -68,6 +68,44 @@ UQFN-10_1.6x2.1mm_P0.5mm:
   #suffix: '_Pad{pad_x:.2f}x{pad_y:.2f}mm_HandSolder'
   #include_suffix_in_3dpath: 'False'
 
+QFN-8-1EP_3x3mm_P0.65mm_EP1.7x1.7mm:
+  device_type: 'QFN'
+  #manufacturer: 'man'
+  #part_number: 'mpn'
+  size_source: 'MCL DQ849'
+  ipc_class: 'qfn' # 'qfn_pull_back'
+  #ipc_density: 'least' #overwrite global value for this device.
+  # custom_name_format:
+  body_size_x_min: 2.9
+  body_size_x: 3
+  body_size_x_max: 3.1
+  body_size_y_min: 2.9
+  body_size_y: 3
+  body_size_y_max: 3.1
+  lead_width_min: 0.25
+  lead_width_max: 0.35
+  lead_len_min: 0.3
+  lead_len_max: 0.5
+
+  EP_size_x_min: 1.65
+  EP_size_x: 1.7
+  EP_size_x_max: 1.75
+  EP_size_y_min: 1.65
+  EP_size_y: 1.7
+  EP_size_y_max: 1.75
+  EP_paste_coverage: 0.65
+  EP_num_paste_pads: [2, 2]
+  heel_reduction: 0.1 #for relatively large EP pads (increase clearance)
+
+  pitch: 0.65
+  num_pins_x: 2
+  num_pins_y: 2
+  #chamfer_edge_pins: 0.25
+  #pin_count_grid:
+  #pad_length_addition: 0.5
+  #suffix: '_Pad{pad_x:.2f}x{pad_y:.2f}mm_HandSolder'
+  #include_suffix_in_3dpath: 'False'
+
 QFN-12-1EP_3x3mm_P0.5mm_EP1.65x1.65mm:
   device_type: 'QFN'
   #manufacturer: 'man'
@@ -131,18 +169,20 @@ QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm:
   body_size_y_max: 3.1
   lead_width_min: 0.18
   lead_width_max: 0.3
-  lead_len_min: 0.3
-  lead_len_max: 0.5
-  
+  lead_len_min: 0.35
+  lead_len_max: 0.45
+
   EP_size_x: 1.7
   EP_size_y: 1.7
-  
+
   EP_num_paste_pads: [2, 2]
-  
+
+  heel_reduction: 0.07
+
   pitch: 0.5
   num_pins_x: 4
   num_pins_y: 4
-  
+
 QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm:
   device_type: 'QFN'
   #manufacturer: 'man'

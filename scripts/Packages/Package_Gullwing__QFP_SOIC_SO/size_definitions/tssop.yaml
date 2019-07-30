@@ -1,0 +1,84 @@
+FileHeader:
+  library_Suffix: 'SO'
+  device_type: 'TSSOP'
+
+TSSOP-14_4.4x5mm_P0.65mm:
+  size_source: 'ADF4002'
+  body_size_x:
+    minimum: 4.3
+    nominal: 4.4
+    maximum: 4.5
+  body_size_y:
+    minimum: 4.9
+    nominal: 5
+    maximum: 5.1
+  body_height:
+    maximum: 1.1
+  overall_size_x:
+    minimum: 6.2
+    nominal: 6.4
+    maximum: 6.6
+  lead_width:
+    minimum: 0.19
+    maximum: 0.30
+  lead_len:
+    minimum: 0.5
+    nominal: 0.6
+    maximum: 0.75
+  pitch: 0.65
+  num_pins_x: 0
+  num_pins_y: 7
+
+TSSOP-16_4.4x5mm_P0.65mm:
+  size_source: 'ADF4002'
+  body_size_x:
+    minimum: 4.3
+    nominal: 4.4
+    maximum: 4.5
+  body_size_y:
+    minimum: 4.9
+    nominal: 5
+    maximum: 5.1
+  body_height:
+    maximum: 1.2
+  overall_size_x:
+    minimum: 6.2
+    nominal: 6.4
+    maximum: 6.6
+  lead_width:
+    minimum: 0.19
+    maximum: 0.30
+  lead_len:
+    minimum: 0.45
+    nominal: 0.6
+    maximum: 0.75
+  pitch: 0.65
+  num_pins_x: 0
+  num_pins_y: 8
+
+TSSOP-20_4.4x6.5mm_P0.65mm:
+  size_source: 'STM32F030'
+  body_size_x:
+    minimum: 4.3
+    nominal: 4.4
+    maximum: 4.5
+  body_size_y:
+    minimum: 6.4
+    nominal: 6.5
+    maximum: 6.6
+  body_height:
+    maximum: 1.2
+  overall_size_x:
+    minimum: 6.2
+    nominal: 6.4
+    maximum: 6.6
+  lead_width:
+    minimum: 0.19
+    maximum: 0.30
+  lead_len:
+    minimum: 0.45
+    nominal: 0.6
+    maximum: 0.75
+  pitch: 0.65
+  num_pins_x: 0
+  num_pins_y: 10
